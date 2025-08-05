@@ -1,6 +1,8 @@
 import { Bed, Mountain, Wifi, Thermometer, Sun, Armchair } from "lucide-react";
-import azzurraImage from "@assets/AZZURRA_1754417456878.jpg";
 import bluImage from "@assets/camera Blu_1754417456879.jpg";
+import rossaImage1 from "@assets/WhatsApp Image 2025-07-28 at 18.13.34_1754420946904.jpeg";
+import rossaImage2 from "@assets/WhatsApp Image 2025-07-28 at 18.13.35 (1)_1754420946905.jpeg";
+import rossaImage3 from "@assets/WhatsApp Image 2025-07-28 at 18.13.35_1754420946905.jpeg";
 
 export default function RoomShowcase() {
   const scrollToSection = (sectionId: string) => {
@@ -21,62 +23,10 @@ export default function RoomShowcase() {
           </p>
         </div>
 
-        {/* Camera Azzurra */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src={azzurraImage} 
-                alt="Camera Azzurra con vista panoramica" 
-                className="rounded-2xl shadow-2xl w-full h-96 object-cover"
-              />
-            </div>
-            
-            <div>
-              <div className="flex items-center mb-4">
-                <div className="w-4 h-4 bg-blue-400 rounded-full mr-3"></div>
-                <h3 className="text-3xl font-bold text-gray-800">Camera Azzurra</h3>
-              </div>
-              
-              <p className="text-lg text-gray-600 mb-6">
-                Un rifugio di eleganza con vista sulle montagne del Sannio. 
-                La Camera Azzurra combina comfort moderno e charme tradizionale italiano, 
-                con dettagli raffinati e colori che richiamano il cielo campano.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center">
-                  <Bed className="h-5 w-5 text-terracotta mr-2" />
-                  <span>Letto matrimoniale</span>
-                </div>
-                <div className="flex items-center">
-                  <Mountain className="h-5 w-5 text-terracotta mr-2" />
-                  <span>Vista panoramica</span>
-                </div>
-                <div className="flex items-center">
-                  <Wifi className="h-5 w-5 text-terracotta mr-2" />
-                  <span>WiFi gratuito</span>
-                </div>
-                <div className="flex items-center">
-                  <Thermometer className="h-5 w-5 text-terracotta mr-2" />
-                  <span>Riscaldamento</span>
-                </div>
-              </div>
-              
-              <button 
-                onClick={() => scrollToSection('prenota')}
-                className="bg-powder hover:bg-blue-400 text-white px-6 py-3 rounded-lg transition-colors"
-              >
-                Prenota Camera Azzurra
-              </button>
-            </div>
-          </div>
-        </div>
-
         {/* Camera Blu */}
         <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
+            <div>
               <div className="flex items-center mb-4">
                 <div className="w-4 h-4 bg-blue-600 rounded-full mr-3"></div>
                 <h3 className="text-3xl font-bold text-gray-800">Camera Blu</h3>
@@ -115,7 +65,7 @@ export default function RoomShowcase() {
               </button>
             </div>
             
-            <div className="order-1 lg:order-2">
+            <div>
               <img 
                 src={bluImage} 
                 alt="Camera Blu con arredi eleganti" 
@@ -128,12 +78,24 @@ export default function RoomShowcase() {
         {/* Camera Rossa */}
         <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="grid grid-cols-1 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src={rossaImage1} 
                 alt="Camera Rossa elegante e accogliente" 
-                className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+                className="rounded-2xl shadow-2xl w-full h-64 object-cover"
               />
+              <div className="grid grid-cols-2 gap-2">
+                <img 
+                  src={rossaImage2} 
+                  alt="Camera Rossa dettaglio" 
+                  className="rounded-xl shadow-lg w-full h-32 object-cover"
+                />
+                <img 
+                  src={rossaImage3} 
+                  alt="Camera Rossa vista" 
+                  className="rounded-xl shadow-lg w-full h-32 object-cover"
+                />
+              </div>
             </div>
             
             <div>

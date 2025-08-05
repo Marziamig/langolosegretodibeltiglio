@@ -194,7 +194,6 @@ ${form.getValues('message')}`;
                       </FormControl>
                       <SelectContent>
                         <SelectItem value="nessuna">Nessuna preferenza</SelectItem>
-                        <SelectItem value="azzurra">Camera Azzurra</SelectItem>
                         <SelectItem value="blu">Camera Blu</SelectItem>
                         <SelectItem value="rossa">Camera Rossa</SelectItem>
                         <SelectItem value="sun">Camera Sun</SelectItem>
