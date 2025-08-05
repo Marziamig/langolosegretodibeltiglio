@@ -1,4 +1,5 @@
 import { ChevronDown, Eye } from "lucide-react";
+import azzurraImage from "@assets/AZZURRA_1754417456878.jpg";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +18,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=1200')"
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${azzurraImage})`
         }}
       />
       
