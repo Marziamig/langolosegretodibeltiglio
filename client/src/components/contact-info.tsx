@@ -35,7 +35,7 @@ export default function ContactInfo() {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">WhatsApp</h4>
                   <p className="text-gray-600">
-                    +39 3XX XXX XXXX<br />
+                    +39 378 093 0050<br />
                     <span className="text-sm">Disponibile 24/7 per emergenze</span>
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export default function ContactInfo() {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Email</h4>
                   <p className="text-gray-600">
-                    info@angolosegretobeltiglio.it<br />
+                    infotourforyou@gmail.com<br />
                     <span className="text-sm">Risposta entro 24 ore</span>
                   </p>
                 </div>

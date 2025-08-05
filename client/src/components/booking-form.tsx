@@ -82,7 +82,7 @@ Camera preferita: ${form.getValues('preferredRoom')}
     
 ${form.getValues('message')}`;
     
-    window.open(`https://wa.me/393XXXXXXXXX?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/393780930050?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -196,6 +196,8 @@ ${form.getValues('message')}`;
                         <SelectItem value="nessuna">Nessuna preferenza</SelectItem>
                         <SelectItem value="azzurra">Camera Azzurra</SelectItem>
                         <SelectItem value="blu">Camera Blu</SelectItem>
+                        <SelectItem value="rossa">Camera Rossa</SelectItem>
+                        <SelectItem value="sun">Camera Sun</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />

@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/393XXXXXXXXX?text=Ciao! Vorrei informazioni su L\'Angolo Segreto di Beltiglio', '_blank');
+    window.open('https://wa.me/393780930050?text=Ciao! Vorrei informazioni su L\'Angolo Segreto di Beltiglio', '_blank');
   };
 
   return (
