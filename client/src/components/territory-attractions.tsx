@@ -1,5 +1,6 @@
 import { MapPin, Clock, Building, Mountain, Car, Heart, Star } from "lucide-react";
 import cenaStelle from "@assets/cena sotto le stelle_1754478868677.png";
+import sagraImage from "@assets/Sagra_1754481678370.png";
 
 export default function TerritoryAttractions() {
   return (
@@ -127,12 +128,12 @@ export default function TerritoryAttractions() {
 
             <div className="bg-cream p-6 rounded-xl">
               <img 
-                src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" 
-                alt="Tradizioni locali del Sannio" 
+                src={sagraImage} 
+                alt="Sagre tipiche del Beneventano con prodotti locali" 
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h5 className="text-xl font-bold mb-2">Tradizioni Locali</h5>
-              <p className="text-gray-600">Partecipa alle feste patronali e scopri l'autentica cultura campana</p>
+              <h5 className="text-xl font-bold mb-2">Sagre e Tradizioni</h5>
+              <p className="text-gray-600">Immergiti nelle sagre tipiche del Beneventano e di Beltiglio. Gusta l'arrosto di maiale al forno, il baccalà preparato secondo antiche ricette e il prezioso tartufo del Sannio. Un'esperienza autentica tra sapori genuini e tradizioni secolari che rendono unico questo territorio.</p>
             </div>
           </div>
         </div>
