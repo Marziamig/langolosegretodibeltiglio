@@ -71,10 +71,14 @@ export default function TerritoryAttractions() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-                alt="Colline del Sannio con vigneti" 
-                className="rounded-2xl shadow-xl w-full h-80 object-cover"
+              <iframe 
+                src="https://maps.google.com/maps?q=L'Angolo%20Segreto%20di%20Beltiglio&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                className="rounded-2xl shadow-xl w-full h-80"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mappa L'Angolo Segreto di Beltiglio"
               />
             </div>
             
