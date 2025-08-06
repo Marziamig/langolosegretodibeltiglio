@@ -32,7 +32,7 @@ export default function TerritoryAttractions() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Star className="h-5 w-5 text-yellow-500 mr-3" />
-                <span><strong>Cena gourmet</strong> con prodotti locali del Sannio</span>
+                <span><strong>Cena</strong> con prodotti locali del Sannio</span>
               </div>
               <div className="flex items-center">
                 <Mountain className="h-5 w-5 text-terracotta mr-3" />
