@@ -113,10 +113,8 @@ export default function RoomShowcase() {
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center">
                   <Bed className="h-5 w-5 text-terracotta mr-2" />
-
                   <span>Letti singoli o matrimoniale</span>
                   <span>Letto matrimoniale</span>
->>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-5 w-5 text-terracotta mr-2" />
