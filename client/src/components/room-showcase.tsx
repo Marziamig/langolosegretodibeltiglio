@@ -114,7 +114,6 @@ export default function RoomShowcase() {
                 <div className="flex items-center">
                   <Bed className="h-5 w-5 text-terracotta mr-2" />
                   <span>Letti singoli o matrimoniale</span>
-                  <span>Letto matrimoniale</span>
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-5 w-5 text-terracotta mr-2" />
@@ -140,8 +139,6 @@ export default function RoomShowcase() {
           </div>
         </div>
 
-<<<<<<< HEAD
-=======
         {/* Camera Sun */}
         <div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -193,8 +190,9 @@ export default function RoomShowcase() {
             </div>
           </div>
         </div>
->>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
       </div>
     </section>
   );
 }
+              
+ 
