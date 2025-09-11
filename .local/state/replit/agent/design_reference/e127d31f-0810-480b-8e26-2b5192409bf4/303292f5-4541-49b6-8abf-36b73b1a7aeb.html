@@ -1,0 +1,730 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Angolo Segreto di Beltiglio - Affittacamere nel Sannio</title>
+    <meta name="description" content="Scopri L'Angolo Segreto di Beltiglio, affittacamere di charme nel cuore del Sannio. A 20 minuti da Benevento, tra natura e tradizione.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: '#D2691E',
+                        sage: '#87A96B',
+                        powder: '#B8D4E3',
+                        cream: '#FDF6E3',
+                        sunflower: '#F4D03F',
+                        warmOrange: '#E67E22'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- @COMPONENT: Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm fixed w-full z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-terracotta">L'Angolo Segreto</h1>
+                    <span class="ml-2 text-sm text-sage">di Beltiglio</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-terracotta transition-colors">Home</a>
+                    <a href="#camere" class="text-gray-700 hover:text-terracotta transition-colors">Camere</a>
+                    <a href="#servizi" class="text-gray-700 hover:text-terracotta transition-colors">Servizi</a>
+                    <a href="#territorio" class="text-gray-700 hover:text-terracotta transition-colors">Territorio</a>
+                    <a href="#contatti" class="text-gray-700 hover:text-terracotta transition-colors">Contatti</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="#prenota" class="bg-terracotta text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                        Prenota Ora
+                    </a>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center">
+        <!-- Italian countryside villa with rolling hills and cypress trees -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+             style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=1200');">
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    L'Angolo Segreto<br>
+                    <span class="text-sunflower">di Beltiglio</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light">
+                    Immergiti nella tranquillità del Sannio, a soli 20 minuti da Benevento
+                </p>
+                <p class="text-lg mb-8 opacity-90">
+                    Scopri il fascino autentico della Campania nel nostro affittacamere di charme, 
+                    circondato dalla natura incontaminata delle colline sannite.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#camere" class="bg-terracotta hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors inline-block text-center">
+                        <i class="fas fa-eye mr-2"></i>
+                        Scopri le Camere
+                    </a>
+                    <a href="#contatti" class="border-2 border-white hover:bg-white hover:text-gray-800 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors inline-block text-center">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Contattaci
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Features Preview -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-sage text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mountain text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Vista Panoramica</h3>
+                    <p class="text-gray-600">Goditi la vista mozzafiato sulle colline del Sannio dalla nostra terrazza panoramica</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-powder text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-key text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Self Check-in</h3>
+                    <p class="text-gray-600">Arrivo autonomo e flessibile per la massima comodità durante il tuo soggiorno</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-warmOrange text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-car text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Parcheggio Interno</h3>
+                    <p class="text-gray-600">Parcheggio privato gratuito all'interno della proprietà per la tua tranquillità</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Features Preview -->
+
+    <!-- @COMPONENT: Room Showcase -->
+    <section id="camere" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Le Nostre Camere</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ogni camera racconta una storia di comfort e tradizione italiana, 
+                    arredata con cura per offrirti un'esperienza indimenticabile
+                </p>
+            </div>
+
+            <!-- Camera Azzurra -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div data-mock="true">
+                        <img src="attached_assets/AZZURRA_1754417456878.jpg" 
+                             alt="Camera Azzurra con vista panoramica" 
+                             class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                    </div>
+                    
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="w-4 h-4 bg-blue-400 rounded-full mr-3"></div>
+                            <h3 class="text-3xl font-bold text-gray-800">Camera Azzurra</h3>
+                        </div>
+                        
+                        <p class="text-lg text-gray-600 mb-6">
+                            Un rifugio di eleganza con vista sulle montagne del Sannio. 
+                            La Camera Azzurra combina comfort moderno e charme tradizionale italiano, 
+                            con dettagli raffinati e colori che richiamano il cielo campano.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-terracotta mr-2"></i>
+                                <span>Letto matrimoniale</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-mountain text-terracotta mr-2"></i>
+                                <span>Vista panoramica</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-terracotta mr-2"></i>
+                                <span>WiFi gratuito</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-thermometer-half text-terracotta mr-2"></i>
+                                <span>Riscaldamento</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#prenota" class="bg-powder hover:bg-blue-400 text-white px-6 py-3 rounded-lg inline-block transition-colors">
+                            Prenota Camera Azzurra
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Camera Blu -->
+            <div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div class="flex items-center mb-4">
+                            <div class="w-4 h-4 bg-blue-600 rounded-full mr-3"></div>
+                            <h3 class="text-3xl font-bold text-gray-800">Camera Blu</h3>
+                        </div>
+                        
+                        <p class="text-lg text-gray-600 mb-6">
+                            Accogliente e luminosa, la Camera Blu è un'oasi di tranquillità 
+                            con tocchi di giallo solare che ricordano i campi di girasole campani. 
+                            Perfetta per chi cerca relax e comfort in un ambiente raffinato.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-terracotta mr-2"></i>
+                                <span>Letto matrimoniale</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-sun text-terracotta mr-2"></i>
+                                <span>Molto luminosa</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-terracotta mr-2"></i>
+                                <span>WiFi gratuito</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-chair text-terracotta mr-2"></i>
+                                <span>Area relax</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#prenota" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg inline-block transition-colors">
+                            Prenota Camera Blu
+                        </a>
+                    </div>
+                    
+                    <div class="order-1 lg:order-2" data-mock="true">
+                        <img src="attached_assets/camera Blu_1754417456879.jpg" 
+                             alt="Camera Blu con arredi eleganti" 
+                             class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Room Showcase -->
+
+    <!-- @COMPONENT: Services & Amenities -->
+    <section id="servizi" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Servizi e Comfort</h2>
+                <p class="text-xl text-gray-600">Tutto quello che serve per un soggiorno perfetto</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-sage text-white rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-fire text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Camino</h3>
+                    <p class="text-gray-600">Accogliente camino per serate romantiche e rilassanti durante i mesi più freschi</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-powder text-white rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-wifi text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">WiFi Gratuito</h3>
+                    <p class="text-gray-600">Connessione internet ad alta velocità in tutte le aree della struttura</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-warmOrange text-white rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-key text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Self Check-in</h3>
+                    <p class="text-gray-600">Arrivo autonomo 24/7 per massima flessibilità nei tuoi orari di viaggio</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-terracotta text-white rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-car text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Parcheggio Privato</h3>
+                    <p class="text-gray-600">Parcheggio interno gratuito e sicuro per tutti gli ospiti</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-sage text-white rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-seedling text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Terrazza Panoramica</h3>
+                    <p class="text-gray-600">Ampia terrazza con vista mozzafiato sulle colline del Sannio</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-sunflower text-white rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Natura e Silenzio</h3>
+                    <p class="text-gray-600">Immerso nel verde, lontano dal traffico urbano per un relax totale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services & Amenities -->
+
+    <!-- @COMPONENT: Territory & Attractions -->
+    <section id="territorio" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Scopri il Territorio</h2>
+                <p class="text-xl text-gray-600">Nel cuore del Sannio, tra storia, natura e tradizioni</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <!-- Rolling hills of Campania with vineyards and olive groves -->
+                    <img src="https://pixabay.com/get/g5a1386fad68278e297440a776edd59201a2599117280d85160c59afdeb6d42d98474fbd45de0493144309fa0060e616a573168c9bb066ec6522ca16eb617b73b_1280.jpg" 
+                         alt="Colline del Sannio con vigneti" 
+                         class="rounded-2xl shadow-xl w-full h-96 object-cover">
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-800">
+                        <i class="fas fa-map-marker-alt text-terracotta mr-2"></i>
+                        Posizione Strategica
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        L'Angolo Segreto di Beltiglio si trova in Via Ricci SNC, nel pittoresco borgo di Beltiglio, 
+                        a soli 20 minuti da Benevento e perfettamente collegato con le principali attrazioni della Campania.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-terracotta mr-3"></i>
+                            <span><strong>20 minuti</strong> da Benevento centro storico</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-industry text-terracotta mr-3"></i>
+                            <span>Vicino a <strong>Buitoni, Russo, Nestlé</strong> per viaggi business</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-mountain text-terracotta mr-3"></i>
+                            <span>Immerso nelle <strong>colline del Sannio</strong></span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-car text-terracotta mr-3"></i>
+                            <span><strong>1 ora</strong> da Napoli e Caserta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attractions Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-cream p-6 rounded-xl">
+                    <!-- Historic city center of Benevento with ancient Roman architecture -->
+                    <img src="https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" 
+                         alt="Centro storico di Benevento" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="text-xl font-bold mb-2">Benevento Storica</h4>
+                    <p class="text-gray-600">Scopri l'Arco di Traiano, il Teatro Romano e il ricco patrimonio storico della città sannita</p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-xl">
+                    <!-- Italian wine cellar with wooden barrels and bottles -->
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" 
+                         alt="Cantine del Sannio" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="text-xl font-bold mb-2">Cantine del Sannio</h4>
+                    <p class="text-gray-600">Degusta i pregiati vini locali come l'Aglianico e il Falanghina nelle cantine storiche</p>
+                </div>
+
+                <div class="bg-cream p-6 rounded-xl">
+                    <!-- Traditional Italian festival with people in costume -->
+                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" 
+                         alt="Tradizioni locali del Sannio" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h4 class="text-xl font-bold mb-2">Tradizioni Locali</h4>
+                    <p class="text-gray-600">Partecipa alle feste patronali e scopri l'autentica cultura campana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Territory & Attractions -->
+
+    <!-- @COMPONENT: Target Audience -->
+    <section class="py-20 bg-gradient-to-r from-sage to-powder">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Per Ogni Tipo di Viaggiatore</h2>
+                <p class="text-xl text-white/90">Il tuo rifugio perfetto nel Sannio</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-terracotta text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Coppie Romantiche</h3>
+                    <p class="text-gray-600 mb-6">
+                        Fughe romantiche tra le colline del Sannio, con cene al camino 
+                        e tramonti mozzafiato dalla terrazza panoramica.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Terrazza privata con vista</li>
+                        <li>• Camino accogliente</li>
+                        <li>• Atmosfera intima</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-warmOrange text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-briefcase text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Viaggi Business</h3>
+                    <p class="text-gray-600 mb-6">
+                        Ideale per trasferte di lavoro, vicino alle principali aziende 
+                        della zona e ben collegato con Benevento centro.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• WiFi ad alta velocità</li>
+                        <li>• Self check-in flessibile</li>
+                        <li>• Vicino a Buitoni, Nestlé</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl text-center">
+                    <div class="w-16 h-16 bg-sunflower text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-camera text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Turisti Culturali</h3>
+                    <p class="text-gray-600 mb-6">
+                        Esplora il patrimonio storico del Sannio, dai siti archeologici 
+                        alle tradizioni enogastronomiche locali.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• Vicino ai siti storici</li>
+                        <li>• Consigli locali personalizzati</li>
+                        <li>• Territorio autentico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Target Audience -->
+
+    <!-- @COMPONENT: Booking Form -->
+    <section id="prenota" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Prenota il Tuo Soggiorno</h2>
+                <p class="text-xl text-gray-600">Contattaci per disponibilità e tariffe personalizzate</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <form class="space-y-6" data-implementation="Should integrate with booking system or email">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nome e Cognome</label>
+                            <input type="text" data-mock="true" placeholder="Il tuo nome completo" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" data-mock="true" placeholder="la-tua-email@esempio.com" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Data Arrivo</label>
+                            <input type="date" data-mock="true" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Data Partenza</label>
+                            <input type="date" data-mock="true" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Ospiti</label>
+                            <select data-mock="true" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent">
+                                <option>1 ospite</option>
+                                <option>2 ospiti</option>
+                                <option>3 ospiti</option>
+                                <option>4 ospiti</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Camera Preferita</label>
+                        <select data-mock="true" 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent">
+                            <option>Nessuna preferenza</option>
+                            <option>Camera Azzurra</option>
+                            <option>Camera Blu</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Messaggio (opzionale)</label>
+                        <textarea rows="4" data-mock="true" 
+                                  placeholder="Raccontaci delle tue esigenze particolari o richieste speciali..."
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-terracotta focus:border-transparent"></textarea>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="submit" data-event="click:handleBookingSubmit" 
+                                class="flex-1 bg-terracotta hover:bg-orange-600 text-white py-4 px-6 rounded-lg font-medium text-lg transition-colors">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Invia Richiesta
+                        </button>
+                        
+                        <a href="https://wa.me/393XXXXXXXXX" 
+                           class="flex-1 bg-green-500 hover:bg-green-600 text-white py-4 px-6 rounded-lg font-medium text-lg transition-colors text-center">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Booking Form -->
+
+    <!-- @COMPONENT: Contact & Info -->
+    <section id="contatti" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contatti e Informazioni</h2>
+                <p class="text-xl text-gray-600">Siamo qui per rendere perfetto il tuo soggiorno</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-terracotta text-white rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Indirizzo</h4>
+                                <p class="text-gray-600">
+                                    Via Ricci SNC<br>
+                                    Beltiglio, Ceppaloni (BN)<br>
+                                    Campania, Italia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-sage text-white rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">WhatsApp</h4>
+                                <p class="text-gray-600">
+                                    +39 3XX XXX XXXX<br>
+                                    <span class="text-sm">Disponibile 24/7 per emergenze</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-powder text-white rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Email</h4>
+                                <p class="text-gray-600">
+                                    info@angolosegretobeltiglio.it<br>
+                                    <span class="text-sm">Risposta entro 24 ore</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-warmOrange text-white rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Check-in/out</h4>
+                                <p class="text-gray-600">
+                                    Check-in: dalle 15:00<br>
+                                    Check-out: entro le 11:00<br>
+                                    <span class="text-sm">Orari flessibili su richiesta</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Come Raggiungerci</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold mb-2 text-terracotta">
+                                <i class="fas fa-car mr-2"></i>In Auto
+                            </h4>
+                            <p class="text-gray-600 text-sm">
+                                Autostrada A16 uscita Benevento, poi SS7 direzione Ceppaloni. 
+                                Seguire le indicazioni per Beltiglio.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold mb-2 text-sage">
+                                <i class="fas fa-train mr-2"></i>In Treno
+                            </h4>
+                            <p class="text-gray-600 text-sm">
+                                Stazione di Benevento, poi taxi o autobus locale verso Ceppaloni/Beltiglio 
+                                (20 minuti circa).
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold mb-2 text-powder">
+                                <i class="fas fa-plane mr-2"></i>In Aereo
+                            </h4>
+                            <p class="text-gray-600 text-sm">
+                                Aeroporto di Napoli Capodichino (80 km), poi A16 verso Benevento. 
+                                Servizio transfer su richiesta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-sunflower/20 rounded-lg">
+                        <p class="text-sm text-gray-700">
+                            <i class="fas fa-info-circle text-sunflower mr-2"></i>
+                            <strong>Suggerimento:</strong> Contattaci prima del tuo arrivo per ricevere 
+                            indicazioni dettagliate e il codice di accesso per il self check-in.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact & Info -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-terracotta mb-4">L'Angolo Segreto</h3>
+                    <p class="text-gray-300 mb-4">
+                        Il tuo rifugio di charme nel cuore del Sannio, 
+                        dove tradizione e comfort si incontrano per offrirti 
+                        un'esperienza indimenticabile.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-terracotta transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-terracotta transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-terracotta transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Link Utili</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#camere" class="hover:text-terracotta transition-colors">Le Nostre Camere</a></li>
+                        <li><a href="#servizi" class="hover:text-terracotta transition-colors">Servizi</a></li>
+                        <li><a href="#territorio" class="hover:text-terracotta transition-colors">Territorio</a></li>
+                        <li><a href="#prenota" class="hover:text-terracotta transition-colors">Prenota</a></li>
+                        <li><a href="#contatti" class="hover:text-terracotta transition-colors">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contatti Rapidi</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>
+                            <i class="fas fa-map-marker-alt mr-2 text-terracotta"></i>
+                            Via Ricci SNC, Beltiglio (BN)
+                        </p>
+                        <p>
+                            <i class="fab fa-whatsapp mr-2 text-terracotta"></i>
+                            +39 3XX XXX XXXX
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-2 text-terracotta"></i>
+                            info@angolosegretobeltiglio.it
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 L'Angolo Segreto di Beltiglio. Tutti i diritti riservati.</p>
+                <p class="mt-2 text-sm">P.IVA: XXXXXXXXXX • Codice Identificativo: XXXXXXXXXX</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement smooth scrolling navigation
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // TODO: Implement mobile menu toggle
+            // TODO: Implement form validation and submission
+            // TODO: Implement booking system integration
+            // TODO: Implement WhatsApp integration with pre-filled messages
+        })();
+    </script>
+</body>
+</html>
