@@ -71,7 +71,7 @@ export default function BookingForm() {
   };
 
   const openWhatsApp = () => {
-    const message = `Ciao! Vorrei prenotare presso L'Angolo Segreto di Beltiglio. 
+    const message = `Ciao! Vorrei prenotare presso L'Angolo Segreto di Beltiglio.  
     
 Nome: ${form.getValues('name')}
 Email: ${form.getValues('email')}
@@ -190,16 +190,13 @@ ${form.getValues('message')}`;
                       <FormControl>
                         <SelectTrigger>
                           <SelectValue placeholder="Nessuna preferenza" />
-                        </SelectTrigger>
+                        </Trigger>
                       </FormControl>
                       <SelectContent>
                         <SelectItem value="nessuna">Nessuna preferenza</SelectItem>
                         <SelectItem value="blu">Camera Blu</SelectItem>
                         <SelectItem value="rossa">Camera Rossa</SelectItem>
-<<<<<<< HEAD
-=======
                         <SelectItem value="sun">Camera Sun</SelectItem>
->>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
                       </SelectContent>
                     </Select>
                     <FormMessage />
