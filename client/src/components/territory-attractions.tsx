@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import { MapPin, Clock, Building, Mountain, Car } from "lucide-react";
 import roomImage1 from "@assets/IMG20250806095647_1757581665417.jpg";
 import roomImage2 from "@assets/IMG20250806095700_1757581665418.jpg";
 import roomImage3 from "@assets/IMG20250806095738_1757581665419.jpg";
+=======
+import { MapPin, Clock, Building, Mountain, Car, Heart, Star } from "lucide-react";
+import cenaStelle from "@assets/cena sotto le stelle_1754478868677.png";
+>>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
 import sagraImage from "@assets/Sagra_1754481678370.png";
 
 export default function TerritoryAttractions() {
@@ -9,6 +14,7 @@ export default function TerritoryAttractions() {
     <section id="territorio" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
+<<<<<<< HEAD
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Le Nostre Camere</h2>
           <p className="text-xl text-gray-600">Comfort e tradizione italiana per un soggiorno indimenticabile</p>
         </div>
@@ -42,6 +48,61 @@ export default function TerritoryAttractions() {
             />
             <h3 className="text-xl font-bold mb-2">Dettagli Raffinati</h3>
             <p className="text-gray-600">Ogni camera è curata nei minimi dettagli per garantire un soggiorno perfetto</p>
+=======
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Una cena sotto le stelle... vivi la magia, prenota ora.</h2>
+          <p className="text-xl text-gray-600">Prenota una cena romantica sotto il cielo stellato del Sannio. Cena con prodotti locali e pernottamento incluso. Solo posti limitati!</p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <img 
+              src={cenaStelle} 
+              alt="Cena romantica sotto le stelle in cupola trasparente" 
+              className="rounded-2xl shadow-xl w-full h-96 object-cover"
+            />
+          </div>
+          
+          <div>
+            <h3 className="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+              <Heart className="h-8 w-8 text-red-500 mr-2" />
+              Esperienza Romantica
+            </h3>
+            <p className="text-lg text-gray-600 mb-6">
+              Sotto un cielo stellato, all'interno di una cupola trasparente immersa nella natura, 
+              potrai vivere un momento indimenticabile. Solo tu, la persona che ami e la magia della notte.
+            </p>
+            
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <Star className="h-5 w-5 text-yellow-500 mr-3" />
+                <span><strong>Cena</strong> con prodotti locali del Sannio</span>
+              </div>
+              <div className="flex items-center">
+                <Mountain className="h-5 w-5 text-terracotta mr-3" />
+                <span><strong>Vista panoramica</strong> sulle colline campane</span>
+              </div>
+              <div className="flex items-center">
+                <Building className="h-5 w-5 text-terracotta mr-3" />
+                <span><strong>Pernottamento incluso</strong> in camera romantica</span>
+              </div>
+              <div className="flex items-center">
+                <Clock className="h-5 w-5 text-terracotta mr-3" />
+                <span><strong>Posti limitati</strong> - Prenota subito!</span>
+              </div>
+            </div>
+            
+            <button 
+              onClick={() => {
+                const element = document.getElementById('prenota');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+              className="mt-6 bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg"
+            >
+              Prenota la Cena Romantica
+            </button>
+>>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
           </div>
         </div>
 
@@ -55,7 +116,11 @@ export default function TerritoryAttractions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
               <iframe 
+<<<<<<< HEAD
                 src="https://maps.google.com/maps?q=41.06294444,14.74444444&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+=======
+                src="https://maps.google.com/maps?q=L'Angolo%20Segreto%20di%20Beltiglio&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+>>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
                 className="rounded-2xl shadow-xl w-full h-80"
                 style={{ border: 0 }}
                 allowFullScreen={true}

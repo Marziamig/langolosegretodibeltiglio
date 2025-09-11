@@ -196,6 +196,10 @@ ${form.getValues('message')}`;
                         <SelectItem value="nessuna">Nessuna preferenza</SelectItem>
                         <SelectItem value="blu">Camera Blu</SelectItem>
                         <SelectItem value="rossa">Camera Rossa</SelectItem>
+<<<<<<< HEAD
+=======
+                        <SelectItem value="sun">Camera Sun</SelectItem>
+>>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
                       </SelectContent>
                     </Select>
                     <FormMessage />

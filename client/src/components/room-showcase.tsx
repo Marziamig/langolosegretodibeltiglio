@@ -113,7 +113,11 @@ export default function RoomShowcase() {
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center">
                   <Bed className="h-5 w-5 text-terracotta mr-2" />
+<<<<<<< HEAD
                   <span>Letti singoli o matrimoniale</span>
+=======
+                  <span>Letto matrimoniale</span>
+>>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-5 w-5 text-terracotta mr-2" />
@@ -139,6 +143,60 @@ export default function RoomShowcase() {
           </div>
         </div>
 
+<<<<<<< HEAD
+=======
+        {/* Camera Sun */}
+        <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="flex items-center mb-4">
+                <div className="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
+                <h3 className="text-3xl font-bold text-gray-800">Camera Sun</h3>
+              </div>
+              
+              <p className="text-lg text-gray-600 mb-6">
+                Radiosa come il sole campano, la Camera Sun è un tripudio di luce 
+                naturale e colori solari. Ideale per iniziare la giornata con energia 
+                e godere della vista sulle colline verdeggianti del Sannio.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center">
+                  <Bed className="h-5 w-5 text-terracotta mr-2" />
+                  <span>Letto matrimoniale</span>
+                </div>
+                <div className="flex items-center">
+                  <Sun className="h-5 w-5 text-terracotta mr-2" />
+                  <span>Esposta al sole</span>
+                </div>
+                <div className="flex items-center">
+                  <Wifi className="h-5 w-5 text-terracotta mr-2" />
+                  <span>WiFi gratuito</span>
+                </div>
+                <div className="flex items-center">
+                  <Mountain className="h-5 w-5 text-terracotta mr-2" />
+                  <span>Vista colline</span>
+                </div>
+              </div>
+              
+              <button 
+                onClick={() => scrollToSection('prenota')}
+                className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg transition-colors"
+              >
+                Prenota Camera Sun
+              </button>
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Camera Sun luminosa e solare" 
+                className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+>>>>>>> 1a841166a252b30cb976961bfb779a2e3435881a
       </div>
     </section>
   );
