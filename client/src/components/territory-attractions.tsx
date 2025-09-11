@@ -55,7 +55,7 @@ export default function TerritoryAttractions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
               <iframe 
-                src="https://maps.google.com/maps?q=L'Angolo%20Segreto%20di%20Beltiglio&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                src="https://maps.google.com/maps?q=41.06294444,14.74444444&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                 className="rounded-2xl shadow-xl w-full h-80"
                 style={{ border: 0 }}
                 allowFullScreen={true}
