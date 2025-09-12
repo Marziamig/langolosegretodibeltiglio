@@ -190,7 +190,7 @@ ${form.getValues('message')}`;
                       <FormControl>
                         <SelectTrigger>
                           <SelectValue placeholder="Nessuna preferenza" />
-                        </Trigger>
+                        </SelectTrigger>
                       </FormControl>
                       <SelectContent>
                         <SelectItem value="nessuna">Nessuna preferenza</SelectItem>
