@@ -1,4 +1,4 @@
-import { Flame, Wifi, Key, Car, Sprout, Leaf } from "lucide-react";
+import { Flame, Wifi, Key, Car, Sprout, Leaf, ChefHat } from "lucide-react";
 
 export default function ServicesAmenities() {
   return (
@@ -56,6 +56,21 @@ export default function ServicesAmenities() {
             </div>
             <h3 className="text-xl font-semibold mb-2">Natura e Silenzio</h3>
             <p className="text-gray-600">Immerso nel verde, lontano dal traffico urbano per un relax totale</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-lg" data-testid="amenity-shared-kitchen">
+            <div className="w-12 h-12 bg-warm-orange text-white rounded-lg flex items-center justify-center mb-4">
+              <ChefHat className="h-6 w-6" />
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Cucina Condivisa / Shared Kitchen</h3>
+            <p className="text-gray-600 mb-2">
+              Hub di socializzazione per incontrarsi e condividere momenti insieme. 
+              Social hub for meeting and sharing time together.
+            </p>
+            <p className="text-sm text-gray-500">
+              <strong>Orari / Hours:</strong> 7:00 - 22:00<br/>
+              Rispettare lo spazio dopo l'uso - Please respect the space after use
+            </p>
           </div>
         </div>
       </div>
