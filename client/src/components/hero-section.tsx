@@ -1,7 +1,21 @@
 import { ChevronDown, Eye } from "lucide-react";
-import azzurraImage from "@assets/AZZURRA_1754417456878.jpg";
+import { useState, useEffect } from "react";
+import estDest from "@assets/est dest_1764597665945.jpeg";
+import estSin from "@assets/est sin_1764597665946.jpeg";
+import esterno from "@assets/esterno_1764597665946.jpeg";
+
+const exteriorImages = [estDest, estSin, esterno];
 
 export default function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % exteriorImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -14,13 +28,19 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${azzurraImage})`
-        }}
-      />
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+      {exteriorImages.map((image, index) => (
+        <div 
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${image})`
+          }}
+          data-testid={`hero-slide-${index}`}
+        />
+      ))}
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         <div className="max-w-3xl">
@@ -57,6 +77,21 @@ export default function HeroSection() {
         </div>
       </div>
       
+      {/* Slide indicators */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+        {exteriorImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide ? 'bg-white w-6' : 'bg-white/50'
+            }`}
+            data-testid={`slide-indicator-${index}`}
+            aria-label={`Vai alla foto ${index + 1}`}
+          />
+        ))}
+      </div>
+
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
         <ChevronDown className="h-8 w-8" />
       </div>
