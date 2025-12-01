@@ -108,7 +108,7 @@ export default function ServicesAmenities() {
                 </Button>
               </DialogTrigger>
               <DialogContent className="max-w-4xl">
-                <Carousel className="w-full">
+                <Carousel className="w-full" opts={{ duration: 0 }}>
                   <CarouselContent>
                     {kitchenImages.map((image, index) => (
                       <CarouselItem key={index}>
