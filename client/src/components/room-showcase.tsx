@@ -6,6 +6,9 @@ import bluAngolo from "@assets/blu_1764596253813.jpeg";
 import rossaImage1 from "@assets/WhatsApp Image 2025-07-28 at 18.13.34_1754420946904.jpeg";
 import rossaImage2 from "@assets/WhatsApp Image 2025-07-28 at 18.13.35 (1)_1754420946905.jpeg";
 import rossaImage3 from "@assets/WhatsApp Image 2025-07-28 at 18.13.35_1754420946905.jpeg";
+import rossaBagno from "@assets/bagno_1764596281512.jpeg";
+import rossaLuce from "@assets/rossa luce_1764596281512.jpeg";
+import rossaSpecchio from "@assets/specchio_1764596281513.jpeg";
 
 export default function RoomShowcase() {
   const scrollToSection = (sectionId: string) => {
@@ -99,20 +102,29 @@ export default function RoomShowcase() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-1 gap-4">
               <img 
-                src={rossaImage1} 
-                alt="Camera Rossa elegante e accogliente" 
+                src={rossaLuce} 
+                alt="Camera Rossa con letti singoli e decorazioni floreali" 
                 className="rounded-2xl shadow-2xl w-full h-64 object-cover"
+                data-testid="img-camera-rossa-1"
               />
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-3 gap-2">
                 <img 
-                  src={rossaImage2} 
-                  alt="Camera Rossa dettaglio" 
-                  className="rounded-xl shadow-lg w-full h-32 object-cover"
+                  src={rossaImage1} 
+                  alt="Camera Rossa elegante e accogliente" 
+                  className="rounded-xl shadow-lg w-full h-28 object-cover"
+                  data-testid="img-camera-rossa-2"
                 />
                 <img 
-                  src={rossaImage3} 
-                  alt="Camera Rossa vista" 
-                  className="rounded-xl shadow-lg w-full h-32 object-cover"
+                  src={rossaBagno} 
+                  alt="Bagno privato Camera Rossa" 
+                  className="rounded-xl shadow-lg w-full h-28 object-cover"
+                  data-testid="img-camera-rossa-bagno"
+                />
+                <img 
+                  src={rossaSpecchio} 
+                  alt="Bagno Camera Rossa dettaglio specchio" 
+                  className="rounded-xl shadow-lg w-full h-28 object-cover"
+                  data-testid="img-camera-rossa-specchio"
                 />
               </div>
             </div>
@@ -143,14 +155,15 @@ export default function RoomShowcase() {
                   <span>WiFi gratuito</span>
                 </div>
                 <div className="flex items-center">
-                  <Thermometer className="h-5 w-5 text-terracotta mr-2" />
-                  <span>Riscaldamento</span>
+                  <Bath className="h-5 w-5 text-terracotta mr-2" />
+                  <span>Bagno privato</span>
                 </div>
               </div>
               
               <button 
                 onClick={() => scrollToSection('prenota')}
                 className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition-colors"
+                data-testid="button-prenota-rossa"
               >
                 Prenota Camera Rossa
               </button>
