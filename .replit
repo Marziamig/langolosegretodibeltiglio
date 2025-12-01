@@ -1,4 +1,6 @@
-run = "NODE_ENV=development tsx server/index.ts"
+run = "npm run dev"
+
+modules = ["nodejs-20"]
 
 [[ports]]
 localPort = 5000
