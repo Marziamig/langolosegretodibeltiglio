@@ -1,0 +1,644 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Bella - Affittacamere di Charme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E07A5F',
+                        secondary: '#81B29A',
+                        cream: '#F8F5F0',
+                        charcoal: '#2F3E46',
+                        warm: '#FEFEFE'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body text-charcoal bg-warm">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-warm/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-display text-2xl font-bold text-primary">Casa Bella</div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="text-charcoal hover:text-primary transition-colors">Home</a>
+                    <a href="#camere" class="text-charcoal hover:text-primary transition-colors">Camere</a>
+                    <a href="#servizi" class="text-charcoal hover:text-primary transition-colors">Servizi</a>
+                    <a href="#recensioni" class="text-charcoal hover:text-primary transition-colors">Recensioni</a>
+                    <a href="#contatti" class="text-charcoal hover:text-primary transition-colors">Contatti</a>
+                </div>
+                <button class="bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all font-medium">
+                    Prenota Ora
+                </button>
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-charcoal text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+        <!-- Beautiful Italian villa exterior with terracotta walls and lush gardens -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080');">
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        <div class="relative text-center text-white max-w-4xl mx-auto px-4">
+            <h1 class="font-display text-5xl md:text-7xl font-bold mb-6">Benvenuti a Casa Bella</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">Un'esperienza autentica nel cuore dell'Italia</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-primary text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all">
+                    Scopri le Camere
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-charcoal transition-all">
+                    Guarda la Gallery
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Property Overview -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">La Nostra Casa</h2>
+                <p class="text-lg text-charcoal/80 max-w-3xl mx-auto leading-relaxed">
+                    Casa Bella è un affittacamere di charme situato in una posizione privilegiata, dove tradizione e comfort moderno si incontrano per offrire un'esperienza indimenticabile.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center group">
+                    <div class="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fas fa-bed text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Camere Eleganti</h3>
+                    <p class="text-charcoal/70">Ogni camera è arredata con gusto e dotata di tutti i comfort moderni</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-secondary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary/20 transition-colors">
+                        <i class="fas fa-map-marker-alt text-secondary text-3xl"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Posizione Centrale</h3>
+                    <p class="text-charcoal/70">Nel cuore della città storica, a pochi passi dalle principali attrazioni</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fas fa-heart text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold mb-4">Ospitalità Autentica</h3>
+                    <p class="text-charcoal/70">Un'accoglienza calorosa e consigli personalizzati per il vostro soggiorno</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Property Overview -->
+
+    <!-- @COMPONENT: Room Gallery -->
+    <section id="camere" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">Le Nostre Camere</h2>
+                <p class="text-lg text-charcoal/80 max-w-2xl mx-auto">Ogni camera racconta una storia unica, combinando eleganza classica e comfort moderno</p>
+            </div>
+
+            <!-- @MAP: rooms.map(room => ( -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group" data-mock="true">
+                    <!-- Elegant bedroom with vintage furniture and warm lighting -->
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Camera Deluxe" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-display text-2xl font-semibold">Camera Deluxe</h3>
+                            <span class="text-primary font-semibold text-xl">€85/notte</span>
+                        </div>
+                        <p class="text-charcoal/70 mb-6">Spaziosa camera matrimoniale con vista panoramica, bagno privato e area relax</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">2 Ospiti</span>
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">Bagno Privato</span>
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">Vista Panoramica</span>
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">Wi-Fi</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full hover:bg-opacity-90 transition-all font-medium">
+                            Prenota Ora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group" data-mock="true">
+                    <!-- Cozy bedroom with rustic charm and modern amenities -->
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Camera Standard" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-display text-2xl font-semibold">Camera Standard</h3>
+                            <span class="text-primary font-semibold text-xl">€65/notte</span>
+                        </div>
+                        <p class="text-charcoal/70 mb-6">Accogliente camera doppia con arredo classico e tutti i comfort essenziali</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">2 Ospiti</span>
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">Bagno Privato</span>
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">Aria Condizionata</span>
+                            <span class="bg-cream text-charcoal px-3 py-1 rounded-full text-sm">Wi-Fi</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-3 rounded-full hover:bg-opacity-90 transition-all font-medium">
+                            Prenota Ora
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+
+            <!-- Photo Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Modern bathroom with marble details and luxury fixtures -->
+                <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Bagno moderno" class="rounded-xl h-48 object-cover hover:scale-105 transition-transform cursor-pointer">
+                
+                <!-- Italian breakfast setup with pastries and coffee -->
+                <img src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Colazione italiana" class="rounded-xl h-48 object-cover hover:scale-105 transition-transform cursor-pointer">
+                
+                <!-- Charming balcony with plants and city view -->
+                <img src="https://pixabay.com/get/gb5a5a06633295c399c2ffd6d7d427707582a60f736d4853ebc29f0fb47442c825be1101400d98c7aac21e29505287f47e8eef2bb6143c84cf9b75c4dcbbf6f16_1280.jpg" alt="Balcone panoramico" class="rounded-xl h-48 object-cover hover:scale-105 transition-transform cursor-pointer">
+                
+                <!-- Cozy common area with comfortable seating -->
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" alt="Area comune" class="rounded-xl h-48 object-cover hover:scale-105 transition-transform cursor-pointer">
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Room Gallery -->
+
+    <!-- @COMPONENT: Services & Amenities -->
+    <section id="servizi" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">Servizi e Comfort</h2>
+                <p class="text-lg text-charcoal/80 max-w-2xl mx-auto">Tutto quello che serve per un soggiorno perfetto</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-wifi text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Wi-Fi Gratuito</h4>
+                    <p class="text-sm text-charcoal/70">Connessione veloce in tutte le aree</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-snowflake text-secondary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Aria Condizionata</h4>
+                    <p class="text-sm text-charcoal/70">Clima perfetto tutto l'anno</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-coffee text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Colazione Inclusa</h4>
+                    <p class="text-sm text-charcoal/70">Prodotti locali freschi ogni mattina</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-car text-secondary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Parcheggio</h4>
+                    <p class="text-sm text-charcoal/70">Posto auto riservato incluso</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-concierge-bell text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Servizio 24h</h4>
+                    <p class="text-sm text-charcoal/70">Assistenza sempre disponibile</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-map text-secondary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Guida Turistica</h4>
+                    <p class="text-sm text-charcoal/70">Consigli personalizzati sui luoghi da visitare</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-luggage-cart text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Deposito Bagagli</h4>
+                    <p class="text-sm text-charcoal/70">Servizio custodi gratuito</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fas fa-shield-alt text-secondary text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Sicurezza</h4>
+                    <p class="text-sm text-charcoal/70">Accesso controllato e cassaforte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services & Amenities -->
+
+    <!-- @COMPONENT: Location & Attractions -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">Posizione Strategica</h2>
+                    <p class="text-lg text-charcoal/80 mb-8 leading-relaxed">
+                        Casa Bella si trova nel cuore della città storica, a pochi minuti a piedi dalle principali attrazioni turistiche e dai migliori ristoranti locali.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-church text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Duomo di San Marco</h4>
+                                <p class="text-charcoal/70 text-sm">3 minuti a piedi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-utensils text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Ristoranti Tipici</h4>
+                                <p class="text-charcoal/70 text-sm">2 minuti a piedi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-train text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Stazione Centrale</h4>
+                                <p class="text-charcoal/70 text-sm">10 minuti a piedi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-shopping-bag text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Centro Commerciale</h4>
+                                <p class="text-charcoal/70 text-sm">5 minuti a piedi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Historic Italian city center with cobblestone streets -->
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Centro storico" class="rounded-2xl shadow-xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">4.9</div>
+                            <div class="text-sm text-charcoal/70">Rating Posizione</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Location & Attractions -->
+
+    <!-- @COMPONENT: Testimonials -->
+    <section id="recensioni" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">Cosa Dicono i Nostri Ospiti</h2>
+                <p class="text-lg text-charcoal/80 max-w-2xl mx-auto">Le recensioni autentiche di chi ha scelto Casa Bella</p>
+            </div>
+
+            <!-- @MAP: reviews.map(review => ( -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg" data-mock="true">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-charcoal/70 text-sm">5.0</span>
+                    </div>
+                    <p class="text-charcoal/80 mb-6 italic leading-relaxed">
+                        "Un soggiorno fantastico! La camera era pulitissima e l'accoglienza calorosa. La posizione è perfetta per visitare il centro storico."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="font-semibold text-primary">MR</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold" data-bind="review.name">Maria Rossi</div>
+                            <div class="text-charcoal/70 text-sm">Roma, Italia</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg" data-mock="true">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-charcoal/70 text-sm">5.0</span>
+                    </div>
+                    <p class="text-charcoal/80 mb-6 italic leading-relaxed">
+                        "Esperienza indimenticabile! I proprietari sono stati gentilissimi e ci hanno dato ottimi consigli. Torneremo sicuramente!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="font-semibold text-secondary">LB</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold" data-bind="review.name">Luca Bianchi</div>
+                            <div class="text-charcoal/70 text-sm">Milano, Italia</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg" data-mock="true">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-charcoal/70 text-sm">5.0</span>
+                    </div>
+                    <p class="text-charcoal/80 mb-6 italic leading-relaxed">
+                        "Perfetto per una fuga romantica! Camere eleganti, colazione deliziosa e una vista mozzafiato. Altamente raccomandato!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="font-semibold text-primary">AF</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold" data-bind="review.name">Anna Ferrari</div>
+                            <div class="text-charcoal/70 text-sm">Napoli, Italia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+
+            <div class="text-center mt-12">
+                <div class="inline-flex items-center bg-white px-8 py-4 rounded-full shadow-lg">
+                    <div class="flex text-yellow-400 mr-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="font-bold text-2xl text-charcoal">4.9/5</div>
+                        <div class="text-charcoal/70 text-sm">126 recensioni</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials -->
+
+    <!-- @COMPONENT: Contact & Booking Form -->
+    <section id="contatti" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-charcoal mb-6">Contattaci</h2>
+                <p class="text-lg text-charcoal/80 max-w-2xl mx-auto">Pronti ad accogliervi per un soggiorno indimenticabile</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="font-display text-2xl font-semibold mb-8">Informazioni di Contatto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Indirizzo</h4>
+                                <p class="text-charcoal/70">Via del Centro Storico, 123<br>50100 Firenze, Italia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-secondary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-phone text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Telefono</h4>
+                                <p class="text-charcoal/70">+39 055 123 4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Email</h4>
+                                <p class="text-charcoal/70">info@casabella.it</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-secondary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-clock text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Orari di Check-in</h4>
+                                <p class="text-charcoal/70">15:00 - 22:00<br>Check-out: 08:00 - 11:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Seguici sui Social</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                <i class="fab fa-tripadvisor"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="bg-cream p-8 rounded-2xl">
+                    <h3 class="font-display text-2xl font-semibold mb-6">Richiedi Disponibilità</h3>
+                    
+                    <form class="space-y-6" data-implementation="Should validate form before submission">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Check-in</label>
+                                <input type="date" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Check-out</label>
+                                <input type="date" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Numero di Ospiti</label>
+                            <select class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option>1 Ospite</option>
+                                <option>2 Ospiti</option>
+                                <option>3 Ospiti</option>
+                                <option>4 Ospiti</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Nome</label>
+                                <input type="text" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Il tuo nome">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-charcoal mb-2">Cognome</label>
+                                <input type="text" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Il tuo cognome">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="la-tua-email@esempio.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Telefono</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="+39 333 123 4567">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-charcoal mb-2">Richieste Speciali</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-charcoal/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Comunicaci eventuali richieste particolari..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all" data-event="click:handleSubmit">
+                            Invia Richiesta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact & Booking Form -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-charcoal text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="font-display text-3xl font-bold text-primary mb-4">Casa Bella</div>
+                    <p class="text-white/80 mb-6">
+                        Il vostro affittacamere di charme nel cuore dell'Italia. Un'esperienza autentica dove tradizione e comfort moderno si incontrano.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary transition-all">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Link Utili</h4>
+                    <ul class="space-y-2 text-white/80">
+                        <li><a href="#home" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="#camere" class="hover:text-primary transition-colors">Camere</a></li>
+                        <li><a href="#servizi" class="hover:text-primary transition-colors">Servizi</a></li>
+                        <li><a href="#recensioni" class="hover:text-primary transition-colors">Recensioni</a></li>
+                        <li><a href="#contatti" class="hover:text-primary transition-colors">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contatti</h4>
+                    <ul class="space-y-2 text-white/80 text-sm">
+                        <li>Via del Centro Storico, 123</li>
+                        <li>50100 Firenze, Italia</li>
+                        <li>+39 055 123 4567</li>
+                        <li>info@casabella.it</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
+                <p>&copy; 2024 Casa Bella. Tutti i diritti riservati. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        (function() {
+            // TODO: Implement smooth scrolling navigation
+            // TODO: Implement image gallery lightbox functionality
+            // TODO: Implement form validation and submission
+            // TODO: Implement mobile menu toggle
+            // TODO: Implement booking availability checking
+            
+            // Basic mobile menu toggle placeholder
+            document.addEventListener('DOMContentLoaded', function() {
+                // Navigation scroll effect
+                window.addEventListener('scroll', function() {
+                    const nav = document.querySelector('nav');
+                    if (window.scrollY > 100) {
+                        nav.classList.add('bg-white/95');
+                    } else {
+                        nav.classList.remove('bg-white/95');
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
