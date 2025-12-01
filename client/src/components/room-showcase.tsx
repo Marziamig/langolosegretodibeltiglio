@@ -1,5 +1,8 @@
-import { Bed, Mountain, Wifi, Thermometer, Sun, Armchair } from "lucide-react";
+import { Bed, Mountain, Wifi, Thermometer, Sun, Armchair, Bath } from "lucide-react";
 import bluImage from "@assets/camera Blu_1754417456879.jpg";
+import bluBagno from "@assets/bagno_1764596253809.jpeg";
+import bluIntera from "@assets/blu intera_1764596253811.jpeg";
+import bluAngolo from "@assets/blu_1764596253813.jpeg";
 import rossaImage1 from "@assets/WhatsApp Image 2025-07-28 at 18.13.34_1754420946904.jpeg";
 import rossaImage2 from "@assets/WhatsApp Image 2025-07-28 at 18.13.35 (1)_1754420946905.jpeg";
 import rossaImage3 from "@assets/WhatsApp Image 2025-07-28 at 18.13.35_1754420946905.jpeg";
@@ -52,25 +55,41 @@ export default function RoomShowcase() {
                   <span>WiFi gratuito</span>
                 </div>
                 <div className="flex items-center">
-                  <Armchair className="h-5 w-5 text-terracotta mr-2" />
-                  <span>Area relax</span>
+                  <Bath className="h-5 w-5 text-terracotta mr-2" />
+                  <span>Bagno privato</span>
                 </div>
               </div>
               
               <button 
                 onClick={() => scrollToSection('prenota')}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                data-testid="button-prenota-blu"
               >
                 Prenota Camera Blu
               </button>
             </div>
             
-            <div>
+            <div className="grid grid-cols-1 gap-4">
               <img 
-                src={bluImage} 
-                alt="Camera Blu con arredi eleganti" 
-                className="rounded-2xl shadow-2xl w-full h-96 object-cover"
+                src={bluIntera} 
+                alt="Camera Blu vista completa con letto matrimoniale" 
+                className="rounded-2xl shadow-2xl w-full h-64 object-cover"
+                data-testid="img-camera-blu-1"
               />
+              <div className="grid grid-cols-2 gap-2">
+                <img 
+                  src={bluAngolo} 
+                  alt="Camera Blu con balcone panoramico" 
+                  className="rounded-xl shadow-lg w-full h-32 object-cover"
+                  data-testid="img-camera-blu-2"
+                />
+                <img 
+                  src={bluBagno} 
+                  alt="Bagno privato Camera Blu" 
+                  className="rounded-xl shadow-lg w-full h-32 object-cover"
+                  data-testid="img-camera-blu-bagno"
+                />
+              </div>
             </div>
           </div>
         </div>
